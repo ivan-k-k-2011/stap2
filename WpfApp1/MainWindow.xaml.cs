@@ -52,7 +52,7 @@ namespace WpfApp1
                     appid = Convert.ToUInt16(packet[14].ToString("X2") + packet[15].ToString("X2")),      //APPID
                     macSrc = (packet.Ethernet.Source.ToString()),           //MAC источника
                     macDst = (packet.Ethernet.Destination.ToString())       //MAC приемника
-                });;
+                });
                 string pak = "";
                 int caseSwitch = 0;
                 const int LineLength = 4;
